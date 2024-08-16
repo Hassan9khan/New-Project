@@ -29,7 +29,7 @@ onAuthStateChanged(auth, (user) => {
   });
 
  
-
+getData()
 
  async function getData() {
   const arr = []
@@ -41,7 +41,7 @@ onAuthStateChanged(auth, (user) => {
   div.innerHTML = '';
   arr.forEach((item) => {
     div.innerHTML += `
-    <h2>Title: ${item.title}</h2>
+    <h1>Title: ${item.title}</h1>
     <p>Description: ${item.description}</p>
     `
   })

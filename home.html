@@ -3,19 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <title>Document</title>
 </head>
-<body>
-    <h1>Home</h1>
-    <button id="logout">Logout</button>
+<body class="text-white">
+    <header class="flex justify-between bg-primary p-4 font-bold">
+        <div>
+            <h1>Personal Blogging App</h1>
+        </div>
+        <div>
+            <button id="logout">Logout</button>
+        </div>
+    </header>
 
-    <form id="form">
-        <input type="text" placeholder="title" id="title">
-        <input type="text" placeholder="description" id="description">
-        <button type="submit">Submit</button>
-    </form>
+    <h1 class="text-black text-4xl font-bold mt-4  text-center " >Dashboard</h1>
+     
 
-    <div id="div">
+    <!-- <div class="text-black mt-8 text-center"> -->
+        <form class="text-black text-center " id="form">
+            <input class="border mt-8 px-24 py-1" type="text" placeholder="title" id="title"> <br>
+            <input class="border mt-8 px-24 py-6" type="text" placeholder="description" id="description">  <br>
+            <button class="bg-primary px-4 py-1 text-white rounded-lg mt-5"  type="submit">Submit</button>
+        </form>
+    <!-- </div> -->
+
+    <div class="text-black" id="div">
 
     </div>
 

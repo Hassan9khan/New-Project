@@ -3,17 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <title>Signup</title>
 </head>
-<body>
-    <h1>Login</h1>
-    <form id="form">
-        <input type="email" id="email" placeholder="Enter Email">
-        <input type="password" id="password" placeholder="Enter Password">
-        <button type="submit">Login</button>
-    </form>
-    <a href="./register.html">Not a user</a>
+<body class="text-white">
+    <header class="bg-primary p-4 font-bold">
+        <h1>Personal Blogging App</h1>
+    </header>
     
+    <main class="text-black te">
+        <h1 class="text-4xl font-bold text-center mt-3 mb-28">Signup</h1>
+    <form id="form" class="text-center mt-8">
+        <div> 
+        <div>
+            <input class="border px-12 py-2 rounded-md " type="email" id="email" placeholder="Enter Email">
+        </div>
+        <div class="mt-6">
+            <input class="border px-12 py-2 rounded-md " type="password" id="password" placeholder="Enter Password">
+        </div> 
+        <div class="mt-5 mb-4">
+            <button class="bg-primary px-4 py-1 text-white rounded-lg " type="submit">Login</button>
+        </div>
+        <a href="./register.html">Not a user</a>
+        </div>
+    </form>  
+    </main>
     <script type="module" src="app.js"></script>
 </body>
 </html>
